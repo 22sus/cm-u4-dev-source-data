@@ -143,7 +143,7 @@ def token_required(f):
 
 @app.route('/api/health', methods=['GET'])
 def health():
-    return jsonify({'status': 'ok', 'version': 'v2.0 (Deployed via CodePipeline!)'}), 200
+    return jsonify({'status': 'ok', 'version': 'v22.0 (Deployed via CodePipeline!)'}), 200
 
 
 # [로그인 API] - RDS Users 테이블 조회 및 bcrypt 검증 로직으로 수정
