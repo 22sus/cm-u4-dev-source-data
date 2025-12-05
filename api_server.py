@@ -187,7 +187,8 @@ def login():
                     })
 
         # 인증 실패 (사용자가 없거나 비밀번호 불일치)
-        return jsonify({'success': False, 'message': 'Invalid credentials'}), 401
+        return jsonify({'success': False, 'message': 'Invalid credentials (v2.0 - Updated!)'}), 401
+
 
     except Exception as e:
         print(f"❌ RDS Login Error: {e}")
